@@ -1,0 +1,137 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery手风琴动画</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Raleway);
+
+        body {
+            background: #000000;
+            font-family: "Raleway";
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            height: calc(100vh - 60px);
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container img {
+            object-fit: cover;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .container img:not(.first) {
+            opacity: 0;
+        }
+
+        .container img.first {
+            opacity: 0.3;
+        }
+
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            font-size: 50px;
+            color: white;
+            width: 330px;
+        }
+
+        .menu li {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .line {
+            display: inline-block;
+            transform: translateY(-13px);
+            margin-right: 10px;
+            height: 5px;
+            background: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="menu">
+            <li data="0">
+                <div class="line"></div>Home
+            </li>
+            <li data="1">
+                <div class="line"></div>Collections
+            </li>
+            <li data="2">
+                <div class="line"></div>About
+            </li>
+            <li data="3">
+                <div class="line"></div>Contacts
+            </li>
+        </ul>
+        <img
+            src="https://images.unsplash.com/photo-1597076593431-0fba435c0510?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80" />
+        <img
+            src="https://images.unsplash.com/photo-1601602044645-fe23f193dd82?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2133&q=80" />
+        <img
+            src="https://images.unsplash.com/photo-1579745831743-2bbafb0ab415?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" />
+        <img
+            src="https://images.unsplash.com/photo-1601588418480-f9923200a05f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1954&q=80" />
+        <img class="first"
+            src="https://images.unsplash.com/photo-1601701119533-fde20cecbf4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80" />
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        const listItems = document.querySelectorAll("li");
+        const imgItems = document.querySelectorAll("img");
+
+        for (let item of listItems) {
+            item.addEventListener("mouseenter", doCoolStuff);
+            item.addEventListener("mouseleave", doCoolStuff);
+        }
+
+        gsap.from("li", { y: -30, opacity: 0, ease: "back", stagger: 0.1 });
+
+
+        function doCoolStuff(li) {
+            let i = this.getAttribute("data");
+
+            const opacityTL = gsap.timeline({
+                defaults: { duration: 0.2, ease: Power1.easeInOut }
+            });
+
+
+            if (li.type == "mouseenter") {
+                opacityTL.to(li.target.children[0], { width: "50px" });
+
+                // Images effects
+                gsap.to(".first", { opacity: 0 });
+                opacityTL.to(imgItems[i], { opacity: 0.3 }, "<");
+            }
+
+            if (li.type == "mouseleave") {
+                opacityTL.to(li.target.children[0], { width: "0" });
+                // Images effects
+                gsap.to(".first", { opacity: 0.3 });
+                opacityTL.to(imgItems[i], { opacity: 0 }, "<");
+            }
+        }
+
+    </script>
+</body>
+
+</html>
