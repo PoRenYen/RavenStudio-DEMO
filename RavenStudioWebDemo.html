@@ -70,36 +70,6 @@
             margin-left: 250px;
         }
 
-        /* about us  */
-        .about-us-img {
-            width: 65%;
-            height: auto;
-        }
-
-        .about-us-img img {
-            width: 45%;
-            height: auto;
-            margin: 0 150px;
-            border-radius: 8px;
-        }
-
-        h1 {
-            color: #383635;
-            font-weight: 400;
-            font-size: 2.7rem;
-        }
-
-        .about-us-text {
-            text-align: center;
-            line-height: 1.8rem;
-        }
-
-        .about-us-text p {
-            color: #383635;
-            font-weight: 400;
-            font-size: 1.35rem;
-        }
-
         /* hero */
         /* body {
             padding: 0;
@@ -249,6 +219,85 @@
         .content a:hover {
             padding-bottom: 1px;
         } */
+        /* about us  */
+        .about-us-img {
+            width: 65%;
+            height: auto;
+        }
+
+        .about-us-img img {
+            width: 80%;
+            height: auto;
+            /* margin: 0 150px; */
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #383635;
+            font-weight: 400;
+            font-size: 2.7rem;
+        }
+
+        .about-us-text {
+            text-align: center;
+            line-height: 2.8rem;
+            letter-spacing: 0.4rem;
+        }
+
+        .about-us-text p {
+            color: #383635;
+            font-weight: 400;
+            font-size: 1.35rem;
+        }
+
+        /* items */
+        .mt-80 {
+            margin-top: 80px;
+        }
+
+        h2 {
+            width: 280px;
+            color: #383635;
+            font-weight: 400;
+            font-size: 2rem;
+            border-bottom: 3px solid #383635;
+        }
+
+        .items {
+            width: 346.6px;
+            height: 432px;
+            margin-top: 80px;
+        }
+
+        .items p {
+            font-size: 1.35rem;
+            color: #383635;
+            text-align: center;
+        }
+
+        .items-img {
+            width: 346.6px;
+            height: 432px;
+            overflow: hidden;
+        }
+
+        .item-img>img {
+            border-radius: 8px;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .tit {
+            padding-top: 80px;
+            width: 30%;
+            Text-align: center;
+            margin: 0 auto;
+        }
+
+        .dpk {
+            display: inline-block;
+        }
     </style>
 </head>
 
@@ -301,12 +350,13 @@
 
     <div class="about-us">
         <div class="container">
-            <div class="row d-flex justify-content-space-between">
+            <div class="row d-flex">
                 <div class="about-us-img">
-                    <img class="" src="./rsimg/6546546546.jpg" alt="">
+                    <img class="" src=" ./rsimg/6546546546.jpg" alt="">
                 </div>
-                <div class="about-us-text" style="border: 1px solid #ccc;">
+                <div class="about-us-text ">
                     <h1>ABOUT&nbsp;US</h1>
+
                     <p> THEY SHALL NOT GROW OLD.<br>
                         THE IDEA HERE IS NOT TO CHAMPION<br>
                         WAR BUT TO OBSERVE THE IMPACT<br>
@@ -316,7 +366,7 @@
                         CONSIDER TO BE A IMPECCABLE<br>
                         VINTAGE.<br>
                         <br>
-                        AND HERE IS THER STORIES.<br>
+                        AND HERE ARE THEIR STORIES.<br>
                         <br>
                         -YEN
                         <br>
@@ -329,6 +379,40 @@
         </div>
     </div>
 
+
+    <div class="container">
+        <div class="tit">
+            <h2>NEW ARRIVALS</h2>
+        </div>
+        <div class="row d-flex justify-content-center" style="gap: 50px;">
+
+            <div class="items">
+                <div class="item-img">
+                    <img src="./rsimg/PINK TTsKO-1.jpg" alt="">
+                </div>
+                <p> 1992 RUSSIAN <br>
+                    PINK TTsKO MP
+                    EXPERIMENTAL JACKET</p>
+            </div>
+            <div class="items">
+                <div class="item-img">
+                    <img src="./rsimg/BGS-1.jpg" alt="">
+                </div>
+                <p> 1976 WEST GERMANY<br>
+                    BORDER GUARD TYPE 2<br>
+                    BGS CAMO JACKET</p>
+            </div>
+            <div class="items">
+                <div class="item-img">
+                    <img src="./rsimg/VSS PILOT LEATHE-1.jpg" alt="">
+                </div>
+                <p> 1986 SOVIET <br>
+                    AIR FORCE PILOT<br>
+                    LEATHER JACKET</p>
+            </div>
+
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
