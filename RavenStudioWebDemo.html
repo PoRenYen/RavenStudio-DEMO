@@ -29,6 +29,10 @@
             margin-left: 20px;
         }
 
+        .ml-30 {
+            margin-left: 30px;
+        }
+
         .mt-80 {
             margin-top: 80px;
         }
@@ -41,11 +45,6 @@
             width: 33.3333%;
             justify-content: center;
             z-index: 9999;
-        }
-
-        ul li a {
-            font-size: 1.125rem;
-            color: #383635;
         }
 
         .navlogo img {
@@ -72,6 +71,55 @@
 
         .nav-icon {
             margin-left: 250px;
+        }
+
+        ul {
+            list-style: none;
+            display: table;
+            width: 600px;
+            text-align: center;
+        }
+
+        li {
+            display: table-cell;
+            position: relative;
+            padding: 15px 0;
+        }
+
+        ul li a {
+            font-size: 1.125rem;
+            color: #383635;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 0.15em;
+
+            display: inline-block;
+            padding: 15px 20px;
+            position: relative;
+        }
+
+        ul li a:after {
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: #383635;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+        }
+
+        ul li a:hover:after {
+            width: 100%;
+            left: 0;
+        }
+
+        @media screen and (max-height: 300px) {
+            ul {
+                margin-top: 40px;
+            }
         }
 
         /* hero */
@@ -220,7 +268,7 @@
 
         /* about us  */
         .about-us {
-            margin-top: 80px;
+            margin-top: 140px;
         }
 
         .about-us-img {
@@ -254,8 +302,21 @@
             font-size: 1.35rem;
         }
 
-        /* items */
-        h2 {
+        /* goods */
+        .goods {
+            margin-top: 100px;
+        }
+
+        .title {
+            padding-top: 80px;
+            padding-left: 15px;
+            width: 30%;
+            text-align: center;
+            margin: 0 auto;
+            /* justify-content: center; */
+        }
+
+        .title h2 {
             width: 280px;
             color: #383635;
             font-weight: 400;
@@ -267,6 +328,11 @@
             width: 346.6px;
             height: 432px;
             margin-top: 80px;
+            display: inline-block;
+        }
+
+        .items a:hover {
+            text-decoration: none;
         }
 
         .items p {
@@ -280,6 +346,7 @@
             width: 346.6px;
             height: 432px;
             overflow: hidden;
+
         }
 
         .item-img>img {
@@ -287,15 +354,6 @@
             width: 100%;
             height: auto;
             object-fit: cover;
-        }
-
-        .title {
-            padding-top: 80px;
-            padding-left: 15px;
-            width: 30%;
-            text-align: center;
-            margin: 0 auto;
-            /* justify-content: center; */
         }
 
         /* footer */
@@ -369,7 +427,7 @@
     <!-- about us -->
     <div class="about-us">
         <div class="container">
-            <div class="row justify-content-between  flex-nowrap">
+            <div class="row justify-content-between flex-nowrap">
                 <div class=" about-us-img">
                     <img class="" src=" ./rsimg/6546546546.jpg" alt="">
                 </div>
@@ -398,36 +456,43 @@
     </div>
 
     <!-- items -->
-    <div class="container">
-        <div class="title">
-            <h2>NEW ARRIVALS</h2>
-        </div>
-        <div class="row d-flex justify-content-center" style="gap: 50px;">
-            <div class="items">
-                <div class="item-img">
-                    <img src="./rsimg/PINK TTsKO-1.jpg" alt="">
-                </div>
-                <p> 1992 RUSSIAN <br>
-                    PINK TTsKO MP
-                    EXPERIMENTAL JACKET</p>
+    <div class="goods">
+        <div class="container">
+            <div class="title">
+                <h2>NEW ARRIVALS</h2>
             </div>
-            <div class="items">
-                <div class="item-img">
-                    <img src="./rsimg/BGS-1.jpg" alt="">
+            <div class="row d-flex justify-content-center" style="gap: 50px;">
+                <div class="items">
+                    <a href="#">
+                        <div class="item-img">
+                            <img src="./rsimg/PINK TTsKO-1.jpg" alt="">
+                        </div>
+                        <p> 1992 RUSSIAN <br>
+                            PINK TTsKO MP
+                            EXPERIMENTAL JACKET</p>
+                    </a>
                 </div>
-                <p> 1976 WEST GERMANY<br>
-                    BORDER GUARD TYPE 2<br>
-                    BGS CAMO JACKET</p>
-            </div>
-            <div class="items">
-                <div class="item-img">
-                    <img src="./rsimg/VSS PILOT LEATHE-1.jpg" alt="">
+                <div class="items">
+                    <a href="#">
+                        <div class="item-img">
+                            <img src="./rsimg/BGS-1.jpg" alt="">
+                        </div>
+                        <p> 1976 WEST GERMANY<br>
+                            BORDER GUARD TYPE 2<br>
+                            BGS CAMO JACKET</p>
+                    </a>
                 </div>
-                <p> 1986 SOVIET <br>
-                    AIR FORCE PILOT<br>
-                    LEATHER JACKET</p>
+                <div class="items">
+                    <a href="#">
+                        <div class="item-img">
+                            <img src="./rsimg/VSS PILOT LEATHE-1.jpg" alt="">
+                        </div>
+                        <p> 1986 SOVIET <br>
+                            AIR FORCE PILOT<br>
+                            LEATHER JACKET</p>
+                    </a>
+                </div>
             </div>
-
         </div>
     </div>
     <!-- footer -->
@@ -438,9 +503,9 @@
                     Copyright © 2018-2021 RavenStudio
                 </h5>
                 <div class="footer-icon ml-auto">
-                    <a href="#" class="ml-40"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="ml-40"><i class="fab fa-facebook-square"></i></a>
-                    <a href="#" class="ml-40"><i class="far fa-envelope"></i></i></a>
+                    <a href="#" class="ml-30"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="ml-30"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#" class="ml-30"><i class="far fa-envelope"></i></i></a>
                 </div>
             </div>
         </div>
