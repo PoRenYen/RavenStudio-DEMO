@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RavenSrudio</title>
+    <title>RavinStudo Items</title>
 
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -22,13 +22,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap"
         rel="stylesheet">
-
-    <!-- css -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <!--css-->
+    <link rel="stylesheet" href="./css/styles-items.css">
 </head>
 
 <body>
-
     <!-- navbar -->
     <nav class="navbar-expand-lg transparent d-flex  fixed-top">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -64,82 +62,46 @@
         </div>
     </nav>
 
-    <!-- carousel -->
-    <div id="main">
-        <h1 class="slogan">READY FOR NEXT ADVENTURES</h1>
-        <div class="buttons">
-            <button class="next" onclick="go(-1)"></button>
-            <button class="prev" onclick="go(1)"></button>
-        </div>
-    </div>
-
-    <!-- about us -->
-    <div class="about-us">
+    <!-- small nav -->
+    <div class="small-nav">
         <div class="container">
-            <div class="row justify-content-between flex-nowrap">
-                <div class=" about-us-img">
-                    <img class="" src=" ./rsimg/6546546546.jpg" alt="">
-                </div>
-                <div class="about-us-text">
-                    <h1>ABOUT&nbsp;US</h1>
-                    <p> THEY SHALL NOT GROW OLD.<br>
-                        THE IDEA HERE IS NOT TO CHAMPION<br>
-                        WAR BUT TO OBSERVE THE IMPACT<br>
-                        THAT IT HAS ON OUR LIVE.<br>
-                        <br>
-                        WE WANT TO INTRODUCE WHAT WE<br>
-                        CONSIDER TO BE A IMPECCABLE<br>
-                        VINTAGE.<br>
-                        <br>
-                        AND HERE ARE THEIR STORIES.<br>
-                        <br>
-                        -YEN
-                        <br>
-
-                        CHIEF OF RAVEN STUDIO
-                    </p>
-                </div>
-
+            <div class="row  d-flex justify-content-center">
+                <ul>
+                    <li> <a href="#">ALL</a></li>
+                    /
+                    <li> <a href="#">NEW ARRIVALS</a></li>
+                    /
+                    <li> <a href="#">SOVIET</a></li>
+                    /
+                    <li> <a href="#">WINTER JACKET</a></li>
+                    /
+                    <li> <a href="#">1992 RUS PINK TTSKO</a></li>
+                </ul>
             </div>
         </div>
     </div>
-
-    <!-- items -->
+    <!-- goods -->
     <div class="goods">
         <div class="container">
-            <div class="title">
-                <h2>NEW ARRIVALS</h2>
-            </div>
-            <div class="row d-flex justify-content-center" style="gap: 50px;">
-                <div class="items">
-                    <a href="./RavenStdiowebItemsDemo.html">
-                        <div class="item-img">
-                            <img src="./rsimg/PINK TTsKO-1.jpg" alt="">
-                        </div>
-                        <p> 1992 RUSSIAN <br>
+            <div class="row">
+                <div class="items d-flex justify-content-between">
+                    <div class="items-img">
+                        <img src="./rsimg/PINK TTsKO-1.jpg" alt="">
+                    </div>
+                    <div class="items-wrap">
+                        <h1>1992 RUSSIAN
                             PINK TTsKO MP
-                            EXPERIMENTAL JACKET</p>
-                    </a>
-                </div>
-                <div class="items">
-                    <a href="#">
-                        <div class="item-img">
-                            <img src="./rsimg/BGS-1.jpg" alt="">
-                        </div>
-                        <p> 1976 WEST GERMANY<br>
-                            BORDER GUARD TYPE 2<br>
-                            BGS CAMO JACKET</p>
-                    </a>
-                </div>
-                <div class="items">
-                    <a href="#">
-                        <div class="item-img">
-                            <img src="./rsimg/VSS PILOT LEATHE-1.jpg" alt="">
-                        </div>
-                        <p> 1986 SOVIET <br>
-                            AIR FORCE PILOT<br>
-                            LEATHER JACKET</p>
-                    </a>
+                            EXPERIMENTAL JACKET
+                        </h1>
+                        <p>
+                            RARE SOVIET/ RUSSIAN PINK TTsKO EXPERIMENTAL JACKET
+                            USED BY NAVAL INFANTRY,THE FABRIC WAS MADE IN SOVIET
+                            BEFORE 1991, AND THIS TYPE WAS MADE FOR EXPERIMENTAL
+                            BECAUSE THE RUSSIAN ARMED FORCES DIDN'T HAVE ENOUGH
+                            BUDGET AND FABRIC TO MAKE NEW SUIT FROM FACTORY.<br>
+                            IT'S IN GOOD CONDITION.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -166,7 +128,6 @@
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
     <!-- jq -->
-    <script src="./js/index.js"></script>
 </body>
 
 </html>
