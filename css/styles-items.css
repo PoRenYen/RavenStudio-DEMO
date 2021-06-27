@@ -12,6 +12,9 @@ body {
 .ml-30 {
     margin-left: 30px;
 }
+.ml-40 {
+    margin-left: 40px;
+}
 
 .mt-30 {
     margin-top: 30px;
@@ -21,6 +24,9 @@ body {
 }
 
 /* navbar */
+.bar-color{
+    background-color: #e7e0db;
+}
 .navbar-nav,
 .navbar-toggler,
 .navlogo {
@@ -115,11 +121,15 @@ ul li a:hover:after {
     width: 100%;
     height: auto;
 }
+/* .items-img{
+    height: 755px;
+} */
 .items-img img {
     width: 100%;
-    height: auto;
+    height: 100%;
     /* margin: 0 150px; */
     border-radius: 8px;
+    object-fit: cover;
 }
 
 .items-wrap {
@@ -148,12 +158,13 @@ height: auto;
 font-size: 1.3rem;
 }
 /* goods-img */
-.goods-img .items-img img
+.items-imgs img
 {
-    width: 65%;
+    width: 80%;
     height: auto;
     border-radius: 8px;
 }
+
 /* footer */
 footer {
     padding-top: 180px;

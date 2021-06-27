@@ -1,4 +1,21 @@
+// nar bar
+let lastScroll = 0;
 
+$(window).scroll(function () {
+    const nowScroll = $(window).scrollTop();
+    console.log('lastScroll:', lastScroll);
+    console.log('nowScroll:', nowScroll);
+
+    if (lastScroll < nowScroll) {
+        $('.bar').addClass('bar-color');
+    }
+    else {
+        $('.bar').removeClass('bar-color');
+    }
+
+    lastScroll = nowScroll;
+});
+// 
 const cols = 3;
 const main = document.getElementById('main');
 let parts = [];

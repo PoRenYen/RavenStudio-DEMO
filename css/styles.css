@@ -18,6 +18,9 @@ body {
 }
 
 /* navbar */
+.bar-color{
+    background-color: #e7e0db;
+}
 .navbar-nav,
 .navbar-toggler,
 .navlogo {
