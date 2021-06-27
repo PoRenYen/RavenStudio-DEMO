@@ -13,6 +13,9 @@ body {
     margin-left: 30px;
 }
 
+.mt-30 {
+    margin-top: 30px;
+}
 .mt-80 {
     margin-top: 80px;
 }
@@ -105,7 +108,7 @@ ul li a:hover:after {
 }
 /* small nav  */
 .small-nav{
-    margin-top:100px;
+    margin-top:80px;
 }
 /* goods */
 .goods{
@@ -121,7 +124,7 @@ ul li a:hover:after {
 
 .items-wrap {
     text-align:left;
-    line-height: 2.8rem;
+    line-height: 2.5rem;
     letter-spacing: 0.1rem;
     padding-left: 50px;
 }
@@ -133,13 +136,24 @@ ul li a:hover:after {
 }
 
 .items-wrap p {
-    margin-top: 30px;
     color: #383635;
     font-weight: 400;
     font-size: 1.1rem;
     text-align:justify;
+    border-bottom:2px solid  #383635;
 }
-
+.btn{
+width: 250px;
+height: auto;
+font-size: 1.3rem;
+}
+/* goods-img */
+.goods-img .items-img img
+{
+    width: 65%;
+    height: auto;
+    border-radius: 8px;
+}
 /* footer */
 footer {
     padding-top: 180px;
