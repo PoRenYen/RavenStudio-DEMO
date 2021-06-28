@@ -5,7 +5,7 @@ $(window).scroll(function () {
     console.log('lastScroll:', lastScroll);
     console.log('nowScroll:', nowScroll);
 
-    if (lastScroll < nowScroll) {
+    if (lastScroll = nowScroll) {
         $('.bar').addClass('bar-color');
     }
     else {

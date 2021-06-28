@@ -24,8 +24,12 @@ body {
 }
 
 /* navbar */
+.bar{
+    background-color:transparent;
+}
 .bar-color{
     background-color: #e7e0db;
+    transition: 0.8s;
 }
 .navbar-nav,
 .navbar-toggler,

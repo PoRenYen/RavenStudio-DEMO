@@ -6,7 +6,7 @@ $(window).scroll(function () {
     console.log('lastScroll:', lastScroll);
     console.log('nowScroll:', nowScroll);
 
-    if (lastScroll < nowScroll) {
+    if (lastScroll = nowScroll) {
         $('.bar').addClass('bar-color');
     }
     else {
@@ -203,6 +203,6 @@ $(function () {
     lis.mouseenter(function () {
         $(this).stop().animate({ width: 495.2 }).siblings().stop().animate({ width: 0 })
     }).mouseleave(function () {
-        lis.stop().animate({ width: 240 })
+        lis.stop().animate({ width: 130 })
     });
 });

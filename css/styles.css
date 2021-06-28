@@ -18,8 +18,12 @@ body {
 }
 
 /* navbar */
+.bar{
+    background-color:transparent;
+}
 .bar-color{
     background-color: #e7e0db;
+    transition: 0.8s;
 }
 .navbar-nav,
 .navbar-toggler,
@@ -31,8 +35,8 @@ body {
 }
 
 .navlogo img {
-    width: 84px;
-    height: 56px;
+    max-width: 84px;
+    max-height: 56px;
     margin: 0px 10px 10px 0;
 }
 
@@ -219,12 +223,13 @@ ul li a:hover:after {
 }
 
 .about-us-img {
-    width: 592.8px;
-    height: 742.8px;
+    width: 100%;
+    height: auto;
+
 }
 
 .about-us-img img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     /* margin: 0 150px; */
     border-radius: 8px;
@@ -232,21 +237,37 @@ ul li a:hover:after {
 
 .about-us-text {
     text-align: center;
-    line-height: 2.8rem;
+    line-height: 2.7rem;
     letter-spacing: 0.4rem;
     padding-left: 43.2px;
 }
+.about-us-text-mobile{
+    text-align: center;
+    line-height: 1rem;
+    letter-spacing: 0.1rem;
+    margin-top: 60px;
+}
 
+.about-us-text-mobile h1 {
+    color: #383635;
+    font-weight: 400;
+    font-size: 1rem;
+}
 .about-us-text h1 {
     color: #383635;
     font-weight: 400;
-    font-size: 2.7rem;
+    font-size: 2.25rem;
 }
 
+.about-us-text-mobile p {
+    color: #383635;
+    font-weight: 400;
+    font-size: 0.5rem;
+}
 .about-us-text p {
     color: #383635;
     font-weight: 400;
-    font-size: 1.35rem;
+    font-size: 1.125rem;
 }
 
 /* goods */
@@ -255,20 +276,19 @@ ul li a:hover:after {
 }
 
 .title {
-    /* padding-top: 50px; */
-    padding-left: 15px;
-    width: 30%;
+    width:100%;
+    height: 50px;
     text-align: center;
-    margin: 0 auto;
-    /* justify-content: center; */
 }
-
-.title h2 {
+.title-border-bottom
+{
     width: 280px;
-    color: #383635;
+    border-bottom: 3px solid #383635;
+}
+.title h2 {
+
     font-weight: 400;
     font-size: 2rem;
-    border-bottom: 3px solid #383635;
 }
 
 .items {
@@ -289,16 +309,21 @@ ul li a:hover:after {
     text-align: center;
 }
 
-.items-img {
-    width: 346.6px;
+/* .items-img {
+    max-width: 346.6px;
     height: 432px;
+    overflow: hidden;
+
+} */
+.items-img {
+    max-width: 100%;
     overflow: hidden;
 
 }
 
 .item-img>img {
     border-radius: 8px;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     object-fit: cover;
 }
@@ -329,7 +354,7 @@ li {
 
 .lookbooks-box li {
     float: left;
-    width: 240px;
+    width: 130px;
     height: 619px;
 }
 

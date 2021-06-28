@@ -30,7 +30,7 @@
 <body>
 
     <!-- navbar -->
-    <nav class="bar navbar-expand-lg transparent d-flex  fixed-top">
+    <nav class="bar navbar-expand-lg d-flex  fixed-top">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -76,11 +76,12 @@
     <!-- about us -->
     <div class="about-us">
         <div class="container">
-            <div class="row justify-content-between flex-nowrap">
-                <div class=" about-us-img">
+            <div class="row justify-content-center ">
+                <div class=" about-us-img col-xs-12 col-lg-6">
                     <img class="" src=" ./rsimg/6546546546.jpg" alt="">
                 </div>
-                <div class="about-us-text">
+                <!-- 手機板 -->
+                <div class="about-us-text-mobile col-xs-12 d-lg-none">
                     <h1>ABOUT&nbsp;US</h1>
                     <p> THEY SHALL NOT GROW OLD.<br>
                         THE IDEA HERE IS NOT TO CHAMPION<br>
@@ -99,57 +100,87 @@
                         CHIEF OF RAVEN STUDIO
                     </p>
                 </div>
+                <!-- 桌機板 -->
+                <div class="about-us-text col-lg-6 d-lg-block d-none">
+                    <h1>ABOUT&nbsp;US</h1>
+                    <p> THEY SHALL NOT GROW OLD.<br>
+                        THE IDEA HERE IS NOT TO CHAMPION<br>
+                        WAR BUT TO OBSERVE THE IMPACT<br>
+                        THAT IT HAS ON OUR LIVE.<br>
+                        <br>
+                        WE WANT TO INTRODUCE WHAT WE<br>
+                        CONSIDER TO BE A IMPECCABLE<br>
+                        VINTAGE.<br>
+                        <br>
+                        AND HERE ARE THEIR STORIES.<br>
+                        <br>
+                        -YEN
+                        <br>
 
+                        CHIEF OF RAVEN STUDIO
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- items -->
-    <div class="goods">
+    <div class="goods ">
         <div class="container">
-            <div class="title">
-                <h2>NEW ARRIVALS</h2>
-            </div>
-            <div class="row d-flex justify-content-center" style="gap: 50px;">
-                <div class="items">
-                    <a href="./RavenStdiowebItemsDemo.html">
-                        <div class="item-img">
-                            <img src="./rsimg/pinkttsko/PINK TTsKO-1.jpg" alt="">
-                        </div>
-                        <p> 1992 RUSSIAN <br>
-                            PINK TTsKO MP
-                            EXPERIMENTAL JACKET</p>
-                    </a>
+            <div class="row">
+                <!-- 手機板 -->
+                <div class="title col-xs-12 d-lg-none ml-5">
+                    <div class="title-border-bottom">
+                        <h2>NEW ARRIVALS</h2>
+                    </div>
                 </div>
-                <div class="items">
-                    <a href="#">
-                        <div class="item-img">
-                            <img src="./rsimg/BGS-1.jpg" alt="">
-                        </div>
-                        <p> 1976 WEST GERMANY<br>
-                            BORDER GUARD TYPE 2<br>
-                            BGS CAMO JACKET</p>
-                    </a>
+                <!-- 桌機板 -->
+                <div class="title col-lg-12 d-lg-block d-none">
+                    <div class="title-border-bottom mx-auto">
+                        <h2>NEW ARRIVALS</h2>
+                    </div>
                 </div>
-                <div class="items">
-                    <a href="#">
-                        <div class="item-img">
-                            <img src="./rsimg/VSS PILOT LEATHE-1.jpg" alt="">
-                        </div>
-                        <p> 1986 SOVIET <br>
-                            AIR FORCE PILOT<br>
-                            LEATHER JACKET</p>
-                    </a>
+                <div class="itemsbox mx-auto">
+                    <div class="items col-xs-12 col-lg-4">
+                        <a href="./RavenStdiowebItemsDemo.html">
+                            <div class="item-img">
+                                <img src="./rsimg/pinkttsko/PINK TTsKO-1.jpg" alt="">
+                            </div>
+                            <p> 1992 RUSSIAN <br>
+                                PINK TTsKO MP
+                                EXPERIMENTAL JACKET</p>
+                        </a>
+                    </div>
+                    <div class="items col-xs-12 col-lg-4">
+                        <a href="#">
+                            <div class="item-img">
+                                <img src="./rsimg/BGS-1.jpg" alt="">
+                            </div>
+                            <p> 1976 WEST GERMANY<br>
+                                BORDER GUARD TYPE 2<br>
+                                BGS CAMO JACKET</p>
+                        </a>
+                    </div>
+                    <div class="items col-xs-12 col-lg-4">
+                        <a href="#">
+                            <div class="item-img">
+                                <img src="./rsimg/VSS PILOT LEATHE-1.jpg" alt="">
+                            </div>
+                            <p> 1986 SOVIET <br>
+                                AIR FORCE PILOT<br>
+                                LEATHER JACKET</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- lookbooks -->
-    <div class="lookbooks mr-auto">
+    <div class="lookbooks mr-auto d-lg-none">
         <div class="container">
             <div class="row">
-                <div class="lookbooks-box">
-                    <ul class="lookbooks-ul ">
+                <div class="lookbooks-box d-lg-block">
+                    <ul class="lookbooks-ul col-xs-12 col-lg-12">
                         <li><img src="./rsimg/LOOK BOOK/lookbook-1.jpg" alt=""></li>
                         <li><img src="./rsimg/LOOK BOOK/lookbook-2.jpg" alt=""></li>
                         <li><img src="./rsimg/LOOK BOOK/lookbook-3.jpg" alt=""></li>
