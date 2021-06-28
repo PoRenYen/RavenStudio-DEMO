@@ -19,25 +19,26 @@
         }
 
         .lookbooks-ul {
-            width: 1200px;
+            width: auto;
+            overflow: hidden;
         }
 
         .lookbooks-ul li img {
-            width: 1200px;
-            height: 864px;
+            width: auto;
+            height: 1238.5px;
         }
 
         .lookbooks-box {
-            width: 1800px;
-            height: 864px;
-            border: 1px solid #373737;
+            width: 990px;
+            height: 1238.5px;
+            /* border: 1px solid #373737; */
             /* margin: 100px auto 0; */
         }
 
         .lookbooks-box li {
             float: left;
             width: 240px;
-            height: 864px;
+            height: 1238.5px;
         }
     </style>
 </head>
@@ -45,28 +46,28 @@
 <body>
     <div class="lookbooks-box">
         <ul class="lookbooks-ul">
-            <li><img src="./rsimg/VDV Advisor-1.jpg" alt=""></li>
-            <li><img src="./rsimg/VDV Advisor-1.jpg" alt=""></li>
-            <li><img src="./rsimg/VDV Advisor-1.jpg" alt=""></li>
-            <li><img src="./rsimg/VDV Advisor-1.jpg" alt=""></li>
+            <li><img src="./rsimg/LOOK BOOK/lookbook-1.jpg" alt=""></li>
+            <li><img src="./rsimg/LOOK BOOK/lookbook-2.jpg" alt=""></li>
+            <li><img src="./rsimg/LOOK BOOK/lookbook-3.jpg" alt=""></li>
+            <li><img src="./rsimg/LOOK BOOK/lookbook-4.jpg" alt=""></li>
+            <!-- <li><img src="./rsimg/LOOK BOOK/lookbook-5.jpg" alt=""></li>
+            <li><img src="./rsimg/LOOK BOOK/lookbook-6.jpg" alt=""></li> -->
         </ul>
     </div>
-    <!-- <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-    <script type="text/javascript"> -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script>
         $(function () {
-            var lis = $('.wrap li');
+            var lis = $('.lookbooks-box li');
             for (var i = 0; i < lis.length; i++) {
-                lis.eq(i).css('backgroundImage', 'url(images/' + (i + 1) + '.png)');
+                lis.eq(i).css('backgroundImage', 'url(images/' + (i + 1) + '.jpg)');
             }
             lis.mouseenter(function () {
-                $(this).stop().animate({ width: 1200 }).siblings().stop().animate({ width: 0 })
+                $(this).stop().animate({ width: 990 }).siblings().stop().animate({ width: 0 })
             }).mouseleave(function () {
                 lis.stop().animate({ width: 240 })
-            })
-        })
+            });
+        });
     </script>
 </body>
 

@@ -303,6 +303,36 @@ ul li a:hover:after {
     object-fit: cover;
 }
 
+/* lookbooks */
+li {
+    list-style: none;
+}
+
+.lookbooks-ul {
+    width: auto;
+    overflow: hidden;
+    padding-left: 0;
+}
+
+.lookbooks-ul li img {
+    width: auto;
+    height: 619px;
+    border-radius: 8px;
+}
+
+.lookbooks-box {
+    width: 100%;
+    height: 619px;
+    /* border: 1px solid #373737; */
+    margin: 180px auto 0;
+}
+
+.lookbooks-box li {
+    float: left;
+    width: 240px;
+    height: 619px;
+}
+
 /* footer */
 footer {
     padding-top: 180px;

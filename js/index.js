@@ -21,9 +21,9 @@ const main = document.getElementById('main');
 let parts = [];
 
 let images = [
-    "./rsimg/91933.jpg",
-    "./rsimg/91934.jpg",
-    "./rsimg/SOVIET underwear-2(修)-1.jpg"
+    "./rsimg/carousel/91933.jpg",
+    "./rsimg/carousel/91934.jpg",
+    "./rsimg/carousel/SOVIET underwear-2(修)-1.jpg"
 ];
 let current = 0;
 let playing = false;
@@ -194,3 +194,15 @@ function wheel(e) {
 }
 window.addEventListener('mousewheel', wheel, false);
 window.addEventListener('wheel', wheel, false);
+//lookbooks
+$(function () {
+    var lis = $('.lookbooks-box li');
+    for (var i = 0; i < lis.length; i++) {
+        lis.eq(i).css('backgroundImage', 'url(images/' + (i + 1) + '.jpg)');
+    }
+    lis.mouseenter(function () {
+        $(this).stop().animate({ width: 495.2 }).siblings().stop().animate({ width: 0 })
+    }).mouseleave(function () {
+        lis.stop().animate({ width: 240 })
+    });
+});
