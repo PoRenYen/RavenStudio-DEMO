@@ -81,7 +81,7 @@ a:hover {
 ul {
     list-style: none;
     display: table;
-    width: 600px;
+    /* width: 600px; */
     text-align: center;
 }
 
@@ -130,9 +130,11 @@ ul li a:hover:after {
 .small-nav{
     margin-top:80px;
 }
-.small-nav-mobile p
-{
-    font-size: 0.8rem;
+.small-nav-mobile{
+    width: 30%;
+}
+.small-nav-mobile li a p {
+font-size: 0.5rem;
 }
 /* goods */
 .goods{
