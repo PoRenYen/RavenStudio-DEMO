@@ -33,14 +33,24 @@ body {
     justify-content: center;
     z-index: 9999;
 }
-
+.navbar-mobile{
+    background-color: #e7e0db;
+}
 .navlogo img {
     max-width: 84px;
     max-height: 56px;
     margin: 0px 10px 10px 0;
 }
 
-
+.navbar-brand-mobile{
+    font-size: 1rem;
+    color: #383635;
+}
+.navbar-brand-mobile img{
+    max-width: 63px;
+    max-height: 42px;
+    margin: 0px 10px 10px 0;
+}
 .navbar-brand {
     font-size: 2rem;
     color: #383635;
@@ -329,6 +339,10 @@ ul li a:hover:after {
 }
 
 /* lookbooks */
+.lookbooks{
+    margin-top: 120px;
+}
+
 li {
     list-style: none;
 }
@@ -349,7 +363,7 @@ li {
     width: 100%;
     height: 619px;
     /* border: 1px solid #373737; */
-    margin: 180px auto 0;
+    margin-top: 60px;
 }
 
 .lookbooks-box li {
@@ -360,7 +374,7 @@ li {
 
 /* footer */
 footer {
-    padding-top: 180px;
+    padding-top: 100px;
     width: 100%;
     height: 180px;
 }
@@ -368,7 +382,13 @@ footer {
 .copyright {
     color: #383635;
 }
-
+.copyright-mobile {
+    color: #383635;
+}
+.copyright-mobbie p
+{
+    font-size: 0.5rem;
+}
 .footer-icon {
     font-size: 2rem;
 }

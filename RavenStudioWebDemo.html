@@ -30,17 +30,27 @@
 <body>
 
     <!-- navbar -->
-    <nav class="bar navbar-expand-lg d-flex  fixed-top">
+    <!-- 手機NAV -->
+    <nav class="navbar navbar-mobile navbar-expand-lg justify-content-between d-lg-none fixed-top navbar-light">
+        <a class="navbar-brand-mobile" href="./RavenStudioWebDemo.html#">
+            <img src="./rsimg/new logo.png" alt="">RAVEN STUDIO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <!-- 桌機NAV -->
+    <nav class="bar navbar-expand-lg d-flex  fixed-top d-lg-block d-none ">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link ml-20" href="./RavenStudioWebDemo.html">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link ml-20" href="#">ABOUT</a>
+                    <a class="nav-link ml-20" href="#">INFO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link ml-20" href="#">INFO</a>
+                    <a class="nav-link ml-20" href="#">OUTFITS</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link ml-20" href="#">ITEMS</a>
@@ -127,11 +137,11 @@
     <!-- items -->
     <div class="goods ">
         <div class="container">
-            <div class="row">
+            <div class="row mx-auto">
                 <!-- 手機板 -->
                 <div class="title col-xs-12 d-lg-none ml-5">
                     <div class="title-border-bottom">
-                        <h2>NEW ARRIVALS</h2>
+                        <h2 style="font-size: 1.35rem;">NEW ARRIVALS</h2>
                     </div>
                 </div>
                 <!-- 桌機板 -->
@@ -141,7 +151,7 @@
                     </div>
                 </div>
                 <div class="itemsbox mx-auto">
-                    <div class="items col-xs-12 col-lg-4">
+                    <div class="items col-xs-12 col-lg-4 pl-xs-5">
                         <a href="./RavenStdiowebItemsDemo.html">
                             <div class="item-img">
                                 <img src="./rsimg/pinkttsko/PINK TTsKO-1.jpg" alt="">
@@ -176,11 +186,16 @@
         </div>
     </div>
     <!-- lookbooks -->
-    <div class="lookbooks mr-auto d-lg-none">
+    <div class="lookbooks mr-auto  d-lg-block d-none">
         <div class="container">
-            <div class="row">
-                <div class="lookbooks-box d-lg-block">
-                    <ul class="lookbooks-ul col-xs-12 col-lg-12">
+            <div class="row d-flex">
+                <div class="title ">
+                    <div class="title-border-bottom mx-auto">
+                        <h2>OUTFITS</h2>
+                    </div>
+                </div>
+                <div class="lookbooks-box">
+                    <ul class="lookbooks-ul ">
                         <li><img src="./rsimg/LOOK BOOK/lookbook-1.jpg" alt=""></li>
                         <li><img src="./rsimg/LOOK BOOK/lookbook-2.jpg" alt=""></li>
                         <li><img src="./rsimg/LOOK BOOK/lookbook-3.jpg" alt=""></li>
@@ -196,10 +211,21 @@
     <footer>
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <h5 class="copyright ">
+                <!-- 手機板 -->
+                <div class="footer-icon d-lg-none ">
+                    <a href="https://www.instagram.com/raven__studio/" class=""><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/ravenstudiovintage" class="ml-20"><i
+                            class="fab fa-facebook-square"></i></a>
+                    <a href="mailto:ak101mryen@gmail.com" class="ml-20"><i class="far fa-envelope"></i></i></a>
+                </div>
+                <p class="copyright-mobile d-lg-none ">
+                    Copyright © 2018-2021 RavenStudio
+                </p>
+                <!-- 桌機板 -->
+                <h5 class="copyright d-lg-block d-none ">
                     Copyright © 2018-2021 RavenStudio
                 </h5>
-                <div class="footer-icon ml-auto">
+                <div class="footer-icon ml-auto  d-lg-block d-none ">
                     <a href="https://www.instagram.com/raven__studio/" class="ml-30"><i
                             class="fab fa-instagram"></i></a>
                     <a href="https://www.facebook.com/ravenstudiovintage" class="ml-30"><i

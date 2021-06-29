@@ -39,22 +39,31 @@ body {
     justify-content: center;
     z-index: 9999;
 }
-
+.navbar-mobile{
+    background-color: #e7e0db;
+}
 .navlogo img {
-    width: 84px;
-    height: 56px;
+    max-width: 84px;
+    max-height: 56px;
     margin: 0px 10px 10px 0;
 }
 
-
+.navbar-brand-mobile{
+    font-size: 1rem;
+    color: #383635;
+}
+.navbar-brand-mobile img{
+    max-width: 63px;
+    max-height: 42px;
+    margin: 0px 10px 10px 0;
+}
 .navbar-brand {
     font-size: 2rem;
     color: #383635;
 
 }
 
-a:hover,a:visited
-{
+a:hover {
     color: #383635;
     text-decoration: none;
 }
@@ -64,6 +73,7 @@ a:hover,a:visited
     height: 25.92pt;
 }
 
+
 .nav-icon {
     margin-left: 250px;
 }
@@ -71,7 +81,7 @@ a:hover,a:visited
 ul {
     list-style: none;
     display: table;
-    width: 100%;
+    width: 600px;
     text-align: center;
 }
 
@@ -85,6 +95,7 @@ ul li a {
     font-size: 1.125rem;
     color: #383635;
     text-transform: uppercase;
+    text-decoration: none;
     letter-spacing: 0.15em;
 
     display: inline-block;
@@ -110,7 +121,6 @@ ul li a:hover:after {
     left: 0;
 }
 
-
 @media screen and (max-height: 300px) {
     ul {
         margin-top: 40px;
@@ -119,6 +129,10 @@ ul li a:hover:after {
 /* small nav  */
 .small-nav{
     margin-top:80px;
+}
+.small-nav-mobile p
+{
+    font-size: 0.8rem;
 }
 /* goods */
 .goods{
@@ -179,7 +193,13 @@ footer {
 .copyright {
     color: #383635;
 }
-
+.copyright-mobile {
+    color: #383635;
+}
+.copyright-mobie p
+{
+    font-size: 0.5rem;
+}
 .footer-icon {
     font-size: 2rem;
 }
