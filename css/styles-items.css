@@ -158,19 +158,35 @@ font-size: 0.5rem;
     letter-spacing: 0.1rem;
     padding-left: 50px;
 }
+.items-wrap-mobile{
+    text-align: center;
+    line-height: 1.5rem;
+    letter-spacing: 0.2rem;
+    margin-top: 30px;
+}
 
 .items-wrap h1 {
     color: #383635;
     font-weight: 400;
     font-size: 2.35rem;
 }
-
+.items-wrap-mobile h1{
+    color: #383635;
+    font-weight: 400;
+    font-size: 1.7rem;
+}
 .items-wrap p {
     color: #383635;
     font-weight: 400;
     font-size: 1.1rem;
     text-align:justify;
     border-bottom:2px solid  #383635;
+}
+.items-wrap-mobile p{
+    color: #383635;
+    font-weight: 400;
+    font-size: 1.1rem;
+   
 }
 .btn{
 width: 250px;
